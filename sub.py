@@ -102,7 +102,9 @@ def submit(s: requests.Session, old: dict):
         # 'szgj': old['szgj'],# 2021.8.1 del
         # 'old_sfzx': old['sfzx'],# 2021.8.1 del
         'sfzx': old['sfzx'], #是否在校
-        'szdd': old['szdd'], #所在地点
+        # 'szdd': old['szdd'], #所在地点
+        'szdd': '国内', #所在地点 update 2022.2.9
+        # 'sflgj': old['sflgj'],
         'ismoved': 0,  # 如果前一天位置变化这个值会为1，第二天仍然获取到昨天的1，而事实上位置是没变化的，所以置0
         # 'ismoved': old['ismoved'],
         'tw': old['tw'], #体温
